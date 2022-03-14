@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+  *{
+    margin: 0;
+    padding: 0;
+    border-box: border-sizing;
+  }
+  body{
+     background: linear-gradient(rgba(17,17,17,0.4), rgba(20,20,20,1)), url('robo.jpeg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      height: 100vh;
+  }
+    header{
+      justify-content: space-between;
+    }
+    nav{
+    color: white;
+      width: 100%;
+      height:80px;
+      background-color:rgba(0,0,0,0.7);
+      display: flex; 
+      justify-content: space-between;
+       align-items: center;
+       font-family: 'Quicksand', sans-serif;
+       transition: .4s;
+    }
+    nav > h1{
+      margin-left: 8px;
+      padding: 10px;
+      font-size: 2vh;
+      font-weight: 800px;
+      line-height: 20px;
+    }
+    nav ul,li{
+      list-style: none;
+      list-style-type: none;
+    display: flex;
+    justify-items:space-between;
+      font-size: 1.6vh
+    }
+    
+    nav a{
+       justify-items: space-between;
+      text-decoration: none;
+      color: white;
+    }
+    a{
+      padding: 3px;
+    }
+    .diferente,a:hover{
+      background-color:rgb(229,225,225);
+      border-radius: 5px;
+      color: black;
+    }
+    main{
+      color: white;
+      height: 88vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+font-family: 'Quicksand', sans-serif;
+font-weight: 200;
+      
+}
+.main-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+main h1{
+  width: 400px;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+p{
+  margin-bottom: 2rem;
+  font-weight: 600;
+  color:rgba(238,230,230,0.7);
+}
+.btn{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+button{
+  width: 40vw;
+  height: 60px;
+  cursor: pointer;
+  border: 1px solid white;
+  color: white;
+  text-transform: uppercase;
+  background-color: transparent;
+  border-radius: 20px;
+  position: relative;
+  transition: 1.5s;
+}
+button:hover{
+  color:rgb(222,222,106);
+  border: none;
+}
+button:before{
+content: '';
+border-radius:20px ;
+bottom: 0;
+left: 0;
+position:absolute;
+width: 0;
+height: 60px;
+background-color: rgb(61,61,61);
+z-index: -1;
+transition: 1s;
+}
+button:hover:before{
+  width: 100%;
+}
+
+  </style>
+  <title>site backrgound</title>
+</head>
+<body>
+  <header>
+    <nav>
+    <h1>SOLARTECH</h1>
+    <ul>
+         <li><a class="diferente" href="#">Produtos</a></li>
+         <li><a href="#">Feedback</a></li>
+         <li><a href="#">lançamento</a></li>
+         <li><a href="#">regulamento</a></li>
+    </ul>
+    </nav>
+</header>
+    <main>
+      <div class="main-container"> 
+      <h1>conectando você,com o melhor dos dois mundos!</h1>
+      <p>ESCOLHA SEU EGG</p>
+      <div class="btn">
+   <button type="submit">egg alone</button>
+   <button type="submit">egg family</button>
+   </div>
+     </div>
+    </main>
+</body>
+</html>
